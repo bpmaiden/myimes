@@ -43,27 +43,38 @@ hr {
 }
 
 main {
-  padding-top: 30px;
+  padding-top: 10px;
   margin: 0 auto;
-  border: 1px solid black;
+  display: flex;
+  max-width: 1232px;
 }
 
-.column {
-  float: left;
-  margin-right: 30px;
-  display: flex;
+main, div {
   border: 1px solid black;
 }
 
 .column.large {
   width: 630px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column.medium {
   width: 300px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column.small {
   width: 240px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+#phish {
+  width: 100%;
+}
+
+#orca, #burger, .image-click {
+  width: 300px;
+}
