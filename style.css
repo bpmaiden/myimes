@@ -41,3 +41,29 @@ nav a {
 hr {
   border-top: 1px solid black;
 }
+
+main {
+  padding-top: 30px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.column {
+  float: left;
+  margin-right: 30px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
