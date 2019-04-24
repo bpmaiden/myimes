@@ -43,38 +43,103 @@ hr {
 }
 
 main {
-  padding-top: 10px;
+  padding-top: 30px;
   margin: 0 auto;
   display: flex;
-  max-width: 1232px;
+  width: 1232px;
 }
 
-main, div {
+/* main, div {
   border: 1px solid black;
-}
+} */
 
 .column.large {
   width: 630px;
+  margin-right: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .column.medium {
   width: 300px;
+  margin-right: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .column.small {
   width: 240px;
+  margin-right: 30px;
   display: flex;
+  flex-direction: column;
+}
+
+div.image {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+div.image h1 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+div.image h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+div.side-by-side {
+  display: inline-flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #phish {
+  background-image: url(images/phish-story.png);
   width: 100%;
 }
 
-#orca, #burger, .image-click {
+#orca, #burger {
   width: 300px;
+}
+
+#orca h2, #burger h2 {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 20px 0 16px 0;
+}
+
+#orca p, #burger p {
+  margin: 20px 0 16px 0;
+}
+
+#earth {
+  background-image: url(images/earth-story.png);
+  width: 300px;
+  height: 300px;
+}
+
+#cameras {
+  background-image: url(images/camera-story.png);
+  width: 300px;
+  height: 300px;
+}
+
+#cats {
+  background-image: url(images/cat-story.png);
+  width: 300px;
+  height: 300px;
+}
+
+.story {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
