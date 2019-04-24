@@ -51,10 +51,6 @@ main {
   width: 1232px;
 }
 
-main, div {
-  border: 1px solid black;
-}
-
 .column.large {
   width: 630px;
   //margin-right: 30px;
@@ -97,29 +93,30 @@ div.image h2 {
   color: white;
 }
 
-div.side-by-side {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 #phish {
   width: 630px;
 }
 
 #phish .image {
+  height: 300px;
   background-image: url(images/phish-story.png);
+  text-align: left;
+  padding-left: 20px;
 }
 
 #orca, #burger {
   width: 300px;
 }
 
-#orca h2, #burger h2 {
+#orca h2, #burger h2, #action h2 {
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   margin: 20px 0 16px 0;
+}
+
+#action h2 {
+  margin-top: 0;
 }
 
 #orca p, #burger p {
@@ -148,4 +145,21 @@ div.side-by-side {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+#news-bites-menu p {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
 }
